@@ -1,4 +1,20 @@
-creates a 12.04 ubuntu 
-installs mysql server 5.5 with root password: root
-enables mysql remote access 
-forwards mysql port (3306) to host os: 13306
+# MySQL Vagrant scripts
+
+###Requirements:
+- Virtualbox
+- Vagrant
+
+###Init VM:
+```sh
+$ vagrant up
+```
+
+###Connection parameters:
+MySQL port is forwarded to 13306 on host OS
+
+- 127.0.0.1:13306
+- root/root
+
+###Versions:
+- Base image: Ubuntu 12.04
+- Mysql version: 5.5
